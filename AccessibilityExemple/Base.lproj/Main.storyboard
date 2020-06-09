@@ -54,8 +54,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-fI-rbf">
-                                <rect key="frame" x="20" y="445" width="374" height="189"/>
+                                <rect key="frame" x="20" y="445" width="374" height="134"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="2Nm-Zi-h8k"/>
+                                </constraints>
                                 <string key="text">Despojada de qualquer excesso, a motocicleta KTM 1290 SUPER DUKE R estilo hyper-naked agora está ainda mais leve, feroz e agressiva do que nunca. Montada em um chassi totalmente reformulado, ela ostenta uma versão atualizada do renomado motor LC8 V-Twin com ângulo de 75 graus e 1.301 cc, que eleva a identidade THE BEAST a outro nível.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -99,7 +102,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8o-uu-utd">
-                                <rect key="frame" x="80" y="599" width="254" height="99"/>
+                                <rect key="frame" x="80" y="609" width="254" height="89"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7t0-o4-ccs">
                                         <rect key="frame" x="60" y="48.5" width="129" height="32"/>
@@ -124,7 +127,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7t0-o4-ccs" secondAttribute="trailing" symbolic="YES" id="Qvp-UE-Xzc"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LDO-H2-913" secondAttribute="trailing" symbolic="YES" id="UwX-W4-V9i"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LDO-H2-913" secondAttribute="trailing" constant="20" symbolic="YES" id="UwX-W4-V9i"/>
                                     <constraint firstItem="7t0-o4-ccs" firstAttribute="leading" secondItem="d8o-uu-utd" secondAttribute="leading" constant="60" id="Y2E-RQ-R6j"/>
                                     <constraint firstItem="LDO-H2-913" firstAttribute="top" secondItem="d8o-uu-utd" secondAttribute="top" constant="15" id="onO-9J-zk8"/>
                                     <constraint firstItem="7t0-o4-ccs" firstAttribute="top" secondItem="LDO-H2-913" secondAttribute="bottom" constant="13" id="pT6-tb-uj5"/>
@@ -134,27 +137,26 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ffm-fI-rbf" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="6Ol-Gd-8no"/>
-                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="bottom" secondItem="ffm-fI-rbf" secondAttribute="bottom" constant="228" id="7IE-4i-V0G"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="z0i-cF-3n0" secondAttribute="trailing" constant="10" id="7uD-di-MBd"/>
                             <constraint firstItem="Q1k-Jv-XvB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Rh-R7-Dfb" secondAttribute="leading" symbolic="YES" id="CS9-Mf-614"/>
                             <constraint firstItem="lqo-3x-441" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="EO9-Cc-9RN"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="ffm-fI-rbf" secondAttribute="trailing" constant="20" id="KwZ-xJ-lmd"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="lqo-3x-441" secondAttribute="trailing" constant="20" id="PUO-nj-IOx"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="d8o-uu-utd" secondAttribute="trailing" constant="80" id="Qrc-VK-ubT"/>
                             <constraint firstItem="lqo-3x-441" firstAttribute="top" secondItem="0Rh-R7-Dfb" secondAttribute="top" constant="40" id="SGa-pH-4HG"/>
+                            <constraint firstItem="ffm-fI-rbf" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="SMM-ra-913"/>
                             <constraint firstItem="z0i-cF-3n0" firstAttribute="leading" secondItem="Q1k-Jv-XvB" secondAttribute="trailing" constant="5" id="SoA-fa-xjI"/>
                             <constraint firstItem="z0i-cF-3n0" firstAttribute="leading" secondItem="Q1k-Jv-XvB" secondAttribute="trailing" constant="5" id="UNf-6p-AIy"/>
                             <constraint firstItem="PSO-MJ-nal" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="Woi-v3-YqO"/>
                             <constraint firstItem="z0i-cF-3n0" firstAttribute="top" secondItem="0Rh-R7-Dfb" secondAttribute="top" constant="10" id="cjG-1X-5Zc"/>
-                            <constraint firstItem="d8o-uu-utd" firstAttribute="top" secondItem="q5U-aU-pla" secondAttribute="top" constant="599" id="cqB-KZ-vc1"/>
-                            <constraint firstItem="ffm-fI-rbf" firstAttribute="top" secondItem="PSO-MJ-nal" secondAttribute="bottom" constant="30" id="dlN-yn-hmy"/>
+                            <constraint firstItem="d8o-uu-utd" firstAttribute="top" secondItem="ffm-fI-rbf" secondAttribute="bottom" constant="30" id="dbE-wg-Jt6"/>
+                            <constraint firstItem="ffm-fI-rbf" firstAttribute="top" secondItem="PSO-MJ-nal" secondAttribute="bottom" constant="30" id="efZ-WH-Oha"/>
                             <constraint firstItem="PSO-MJ-nal" firstAttribute="top" secondItem="q5U-aU-pla" secondAttribute="top" constant="175" id="gce-xE-bah"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="bottom" secondItem="Khy-QU-cil" secondAttribute="bottom" constant="106.5" id="hMa-NS-zzY"/>
                             <constraint firstItem="d8o-uu-utd" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="80" id="k49-WE-2lq"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="Khy-QU-cil" secondAttribute="trailing" constant="20" id="qbF-jJ-k5w"/>
                             <constraint firstItem="Khy-QU-cil" firstAttribute="top" secondItem="d8o-uu-utd" secondAttribute="bottom" constant="37" id="t2M-jy-bRU"/>
                             <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="PSO-MJ-nal" secondAttribute="trailing" constant="20" id="ue1-Le-LJZ"/>
-                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="ffm-fI-rbf" secondAttribute="trailing" constant="20" id="w3G-Ad-CsM"/>
                             <constraint firstItem="PSO-MJ-nal" firstAttribute="top" secondItem="lqo-3x-441" secondAttribute="bottom" constant="20" id="yXy-BL-uIE"/>
                             <constraint firstItem="Q1k-Jv-XvB" firstAttribute="centerY" secondItem="z0i-cF-3n0" secondAttribute="centerY" id="zj2-gm-bfw"/>
                         </constraints>
