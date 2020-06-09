@@ -1,24 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iQw-WC-umS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--KTM Motos-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccessibilityExemple" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AVo-ib-D8a">
+                                <rect key="frame" x="5" y="44" width="404" height="818"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AVo-ib-D8a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jgd-n3-LK2"/>
+                            <constraint firstItem="AVo-ib-D8a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="ZoW-dg-JPy"/>
+                            <constraint firstItem="AVo-ib-D8a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="b6J-hv-CRF"/>
+                            <constraint firstItem="AVo-ib-D8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="g8A-HJ-562"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="KTM Motos" id="4JI-3h-YYv"/>
+                    <connections>
+                        <outlet property="listTableView" destination="AVo-ib-D8a" id="aJq-uq-PPd"/>
+                        <segue destination="dcW-iW-nJ2" kind="show" identifier="goDetail" id="6g3-Av-D8S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--KTM Motos-->
+        <scene sceneID="pvy-f4-ah1">
+            <objects>
+                <viewController id="dcW-iW-nJ2" customClass="DetailViewController" customModule="AccessibilityExemple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5U-aU-pla">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Duke 1290 R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqo-3x-441">
+                                <rect key="frame" x="20" y="128" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-fI-rbf">
+                                <rect key="frame" x="20" y="445" width="374" height="189"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Despojada de qualquer excesso, a motocicleta KTM 1290 SUPER DUKE R estilo hyper-naked agora está ainda mais leve, feroz e agressiva do que nunca. Montada em um chassi totalmente reformulado, ela ostenta uma versão atualizada do renomado motor LC8 V-Twin com ângulo de 75 graus e 1.301 cc, que eleva a identidade THE BEAST a outro nível.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="z0i-cF-3n0">
+                                <rect key="frame" x="355" y="98" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="darkStack:" destination="dcW-iW-nJ2" eventType="valueChanged" id="iNa-73-Hyr"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1k-Jv-XvB">
+                                <rect key="frame" x="279" y="105" width="71" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-QU-cil">
+                                <rect key="frame" x="232" y="735" width="162" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQb-zV-ARR">
+                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 80.000,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q65-ev-Ay6">
+                                        <rect key="frame" x="58.5" y="0.0" width="103.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotos-ktm-1290-super-duke-r" translatesAutoresizingMaskIntoConstraints="NO" id="PSO-MJ-nal">
+                                <rect key="frame" x="20" y="175" width="374" height="240"/>
+                                <accessibility key="accessibilityConfiguration" label="Imagem do modelo"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="api-Ki-QG4"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8o-uu-utd">
+                                <rect key="frame" x="80" y="599" width="254" height="99"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7t0-o4-ccs">
+                                        <rect key="frame" x="60" y="48.5" width="129" height="32"/>
+                                        <color key="backgroundColor" red="0.99287503960000001" green="0.57097440960000001" blue="0.23908174039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <segments>
+                                            <segment title="Orange"/>
+                                            <segment title="Black"/>
+                                        </segments>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="selectedSegmentTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="bestSegmented:" destination="dcW-iW-nJ2" eventType="valueChanged" id="KIh-dU-JAO"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione a cor desejada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDO-H2-913">
+                                        <rect key="frame" x="30" y="15" width="191" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7t0-o4-ccs" secondAttribute="trailing" symbolic="YES" id="Qvp-UE-Xzc"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LDO-H2-913" secondAttribute="trailing" symbolic="YES" id="UwX-W4-V9i"/>
+                                    <constraint firstItem="7t0-o4-ccs" firstAttribute="leading" secondItem="d8o-uu-utd" secondAttribute="leading" constant="60" id="Y2E-RQ-R6j"/>
+                                    <constraint firstItem="LDO-H2-913" firstAttribute="top" secondItem="d8o-uu-utd" secondAttribute="top" constant="15" id="onO-9J-zk8"/>
+                                    <constraint firstItem="7t0-o4-ccs" firstAttribute="top" secondItem="LDO-H2-913" secondAttribute="bottom" constant="13" id="pT6-tb-uj5"/>
+                                    <constraint firstItem="LDO-H2-913" firstAttribute="leading" secondItem="d8o-uu-utd" secondAttribute="leading" constant="30" id="vXS-V2-Fyn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffm-fI-rbf" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="6Ol-Gd-8no"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="bottom" secondItem="ffm-fI-rbf" secondAttribute="bottom" constant="228" id="7IE-4i-V0G"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="z0i-cF-3n0" secondAttribute="trailing" constant="10" id="7uD-di-MBd"/>
+                            <constraint firstItem="Q1k-Jv-XvB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Rh-R7-Dfb" secondAttribute="leading" symbolic="YES" id="CS9-Mf-614"/>
+                            <constraint firstItem="lqo-3x-441" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="EO9-Cc-9RN"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="lqo-3x-441" secondAttribute="trailing" constant="20" id="PUO-nj-IOx"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="d8o-uu-utd" secondAttribute="trailing" constant="80" id="Qrc-VK-ubT"/>
+                            <constraint firstItem="lqo-3x-441" firstAttribute="top" secondItem="0Rh-R7-Dfb" secondAttribute="top" constant="40" id="SGa-pH-4HG"/>
+                            <constraint firstItem="z0i-cF-3n0" firstAttribute="leading" secondItem="Q1k-Jv-XvB" secondAttribute="trailing" constant="5" id="SoA-fa-xjI"/>
+                            <constraint firstItem="z0i-cF-3n0" firstAttribute="leading" secondItem="Q1k-Jv-XvB" secondAttribute="trailing" constant="5" id="UNf-6p-AIy"/>
+                            <constraint firstItem="PSO-MJ-nal" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="20" id="Woi-v3-YqO"/>
+                            <constraint firstItem="z0i-cF-3n0" firstAttribute="top" secondItem="0Rh-R7-Dfb" secondAttribute="top" constant="10" id="cjG-1X-5Zc"/>
+                            <constraint firstItem="d8o-uu-utd" firstAttribute="top" secondItem="q5U-aU-pla" secondAttribute="top" constant="599" id="cqB-KZ-vc1"/>
+                            <constraint firstItem="ffm-fI-rbf" firstAttribute="top" secondItem="PSO-MJ-nal" secondAttribute="bottom" constant="30" id="dlN-yn-hmy"/>
+                            <constraint firstItem="PSO-MJ-nal" firstAttribute="top" secondItem="q5U-aU-pla" secondAttribute="top" constant="175" id="gce-xE-bah"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="bottom" secondItem="Khy-QU-cil" secondAttribute="bottom" constant="106.5" id="hMa-NS-zzY"/>
+                            <constraint firstItem="d8o-uu-utd" firstAttribute="leading" secondItem="0Rh-R7-Dfb" secondAttribute="leading" constant="80" id="k49-WE-2lq"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="Khy-QU-cil" secondAttribute="trailing" constant="20" id="qbF-jJ-k5w"/>
+                            <constraint firstItem="Khy-QU-cil" firstAttribute="top" secondItem="d8o-uu-utd" secondAttribute="bottom" constant="37" id="t2M-jy-bRU"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="PSO-MJ-nal" secondAttribute="trailing" constant="20" id="ue1-Le-LJZ"/>
+                            <constraint firstItem="0Rh-R7-Dfb" firstAttribute="trailing" secondItem="ffm-fI-rbf" secondAttribute="trailing" constant="20" id="w3G-Ad-CsM"/>
+                            <constraint firstItem="PSO-MJ-nal" firstAttribute="top" secondItem="lqo-3x-441" secondAttribute="bottom" constant="20" id="yXy-BL-uIE"/>
+                            <constraint firstItem="Q1k-Jv-XvB" firstAttribute="centerY" secondItem="z0i-cF-3n0" secondAttribute="centerY" id="zj2-gm-bfw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Rh-R7-Dfb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KTM Motos" id="gOs-yb-kNc">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="Ktn-QA-8dB"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="beastSegment" destination="7t0-o4-ccs" id="hCw-MS-B2t"/>
+                        <outlet property="colorLabel" destination="LDO-H2-913" id="3mz-yD-3eS"/>
+                        <outlet property="colorView" destination="d8o-uu-utd" id="ghW-7j-KhP"/>
+                        <outlet property="darModeLabel" destination="Q1k-Jv-XvB" id="Egz-4m-607"/>
+                        <outlet property="darkSwitch" destination="z0i-cF-3n0" id="WqH-Gy-NdW"/>
+                        <outlet property="detailTextView" destination="ffm-fI-rbf" id="7nr-sE-cVh"/>
+                        <outlet property="infoStackHorizontal" destination="Khy-QU-cil" id="Ea6-37-0qH"/>
+                        <outlet property="motoImage" destination="PSO-MJ-nal" id="akm-l8-2Eb"/>
+                        <outlet property="priceLabel" destination="kQb-zV-ARR" id="1qw-pf-CCl"/>
+                        <outlet property="priceValue" destination="q65-ev-Ay6" id="mrv-Kb-1KC"/>
+                        <outlet property="stackPrice" destination="Khy-QU-cil" id="bsc-JQ-gEX"/>
+                        <outlet property="titleLabel" destination="lqo-3x-441" id="aIw-un-pP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7m-QU-xG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qbw-IX-AUL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iQw-WC-umS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RLY-ci-W8g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SBx-az-9Vf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YD7-Zu-YhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fotos-ktm-1290-super-duke-r" width="600" height="411"/>
+    </resources>
 </document>

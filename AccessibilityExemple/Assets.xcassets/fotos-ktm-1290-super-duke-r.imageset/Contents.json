@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "fotos-ktm-1290-super-duke-r.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

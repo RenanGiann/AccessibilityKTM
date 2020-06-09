@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "ktm-racing-logo-534ABFE4D5-seeklogo.com.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
