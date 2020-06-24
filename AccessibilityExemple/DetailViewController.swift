@@ -30,8 +30,8 @@ class DetailViewController: UIViewController {
         beastSegment.selectedSegmentIndex = 0
         detailTextView.backgroundColor = .gray
         view.backgroundColor = UIColor.gray
-        priceValue.text = "R$ 90.000,00"
-        priceValue.accessibilityLabel = "Preço 90 mil reais"
+        priceValue.text = "R$ 100.000,00"
+        priceValue.accessibilityLabel = "Preço 100 mil reais"
         colorView.backgroundColor = .gray
         motoImage.isAccessibilityElement = true
         colorLabel.accessibilityLabel = "Selecione a cor desejada"
